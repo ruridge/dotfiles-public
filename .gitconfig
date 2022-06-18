@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Robert Uridge
+	email = 856071+ruridge@users.noreply.github.com
+	signingkey = B7C972080AE6E64D
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
