@@ -6,7 +6,9 @@
 
 ## Contents
 - git config
-  - git-cz
+  - [git-cz](https://github.com/streamich/git-cz)
 - zsh config
-  - ohmyzsh
-  - p10k
+  - [ohmyzsh](https://ohmyz.sh)
+  - [p10k](https://github.com/romkatv/powerlevel10k)
+- vim (NeoVim) config
+  - Plugins are managed with [vim-plug](https://github.com/junegunn/vim-plug)
