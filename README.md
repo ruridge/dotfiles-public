@@ -12,3 +12,5 @@
   - [p10k](https://github.com/romkatv/powerlevel10k)
 - vim (NeoVim) config
   - Plugins are managed with [vim-plug](https://github.com/junegunn/vim-plug)
+  - Statusline by [lualine](https://github.com/nvim-lualine/lualine.nvim)
+  
