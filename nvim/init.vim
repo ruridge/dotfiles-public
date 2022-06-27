@@ -7,20 +7,26 @@ endif
 
 " Fundamentals "{{{
 " ---------------------------------------------------------------------
-set number        " Show line numbers
-set title         " Show document name in the window title
+set relativenumber  " Show relative line numbers
+set number          " Show line numbers (current line)
+set title           " Show document name in the window title
 set scrolloff=5   " Show a few lines of context arount the cursor
-set tabstop=2     " number of spaces a <Tab> stands for
-set shiftwidth=0  " Num. of spaces used for each step of (auto)indent
                   " When set to zero the 'tabstop' value will be used
-set expandtab     " Expand <Tab> to space in Insert mode
+set expandtab tabstop=2 shiftwidth=0
+" Keep thes tab settings together
+" expandtab: Expand <Tab> to space in Insert mode
+" tabstop: number of spaces a <Tab> stands for
+" shiftwidth: Num. of spaces used for each step of (auto)indent
 set smartindent   " Smart autoindenting when starting a new line
+set nowrap        " Don't wrap lines
+" Blink the cursor when in INSERT mode
+set guicursor=i:blinkwait0-blinkon250-blinkoff250
 
 " }}}
 
 " Highlights "{{{
 " ---------------------------------------------------------------------
-set cursorline    " hilight the screen line of the cursor
+set cursorline    " highlight the screen line of the cursor
 
 " }}}
 
