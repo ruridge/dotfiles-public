@@ -151,6 +151,19 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 # export HOMEBREW_CASK_OPTS="--require-sha"
 
+# print git repo stats to console when navigating to new repo
+LAST_REPO=""
+cd() {
+    builtin cd "$@";
+    git rev-parse 2>/dev/null;
+
+    if [ $? -eq 0 ]; then
+        if [ "$LAST_REPO" != $(basename $(git rev-parse --show-toplevel)) ]; then
+        onefetch
+        LAST_REPO=$(basename $(git rev-parse --show-toplevel))
+        fi
+    fi
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
