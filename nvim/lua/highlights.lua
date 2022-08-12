@@ -11,4 +11,4 @@ go.pumblend = 5
 wo.cursorline = true
 
 -- buffer-local
-print('highlights.lua loaded')
+print('✅ highlights.lua loaded')

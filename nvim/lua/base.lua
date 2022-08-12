@@ -19,4 +19,4 @@ opt.tabstop = 2              -- insert 2 spaces for a tab
 opt.shiftwidth = 2           -- number of spacas used for (auto)indent
 opt.smartindent = true       -- make indenting smart
 
-print('base.lua loaded')
+print('✅ base.lua loaded')

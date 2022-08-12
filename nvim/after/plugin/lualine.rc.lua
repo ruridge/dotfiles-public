@@ -1,6 +1,6 @@
 local status, lualine = pcall(require, "lualine")
 if (not status) then
-  print('lualine is not installed')
+  print('⚠️ lualine is not installed')
   return
 end
 
@@ -44,4 +44,4 @@ lualine.setup {
   extensions = {'fugitive'}
 }
 
-print('lualine.rc.lua loaded')
+print('✅ lualine.rc.lua loaded')

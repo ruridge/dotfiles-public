@@ -1,6 +1,6 @@
 local status, packer = pcall(require, 'packer')
 if (not status) then
-  print('Packer is not installed')
+  print('⚠️ Packer is not installed')
   return
 end
 
@@ -17,4 +17,4 @@ use {
 use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 end)
 
-print('plugins.lua loaded')
+print('✅ plugins.lua loaded')

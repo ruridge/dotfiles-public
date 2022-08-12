@@ -1,6 +1,6 @@
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then
-  print('lspconfig not installed')
+  print('⚠️ lspconfig not installed')
   return
 end
 
@@ -42,4 +42,4 @@ nvim_lsp.sumneko_lua.setup {
     },
   },
 }
-print('lspconfig.rc.lua loaded')
+print('✅ lspconfig.rc.lua loaded')
