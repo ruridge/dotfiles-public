@@ -131,7 +131,7 @@ export EDITOR='vim'
 #
 # custom updaters
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
-alias nvmup="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh"
+alias nvmup="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash"
 #
 # custim aliases
 alias zshconfig="vim ~/.zshrc"
@@ -167,3 +167,15 @@ cd() {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(rbenv init - zsh)"
+
+# 1Password SSH auth
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+# pnpm
+export PNPM_HOME="/Users/work/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

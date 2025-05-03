@@ -2,8 +2,12 @@
 [user]
 	name = Robert Uridge
 	email = 856071+ruridge@users.noreply.github.com
-	signingkey = B7C972080AE6E64D
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMcpcLg/XUPVXJQIzlU+8f6J/K7fSrTh3qf1JEnQnA9z
 [init]
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
